@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Showroom</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add a style for the car images to make them the same size */
+        .car img {
+            width: 100%; /* Adjust this value as needed */
+            height: auto;
+            border-radius: 8px; /* Add rounded corners to images */
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right, #333, #555); /* Add a gradient background */
+            color: #fff;
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out; /* Smooth transition on hover */
+        }
+
+        nav a:hover {
+            color: #eee;
+        }
+
+        /* Options */
+        .options {
+            background-color: #f5f5f5;
+            padding: 30px;
+        }
+
+        .options h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .options a {
+            color: #333;
+            text-decoration: none;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .options a:hover {
+            text-decoration: underline;
+        }
+
+        /* Slider */
+        .slider {
+            margin-top: 40px;
+            padding: 30px;
+            background: #f9f9f9; /* Add a light background color */
+        }
+
+        .car-container {
+            display: flex;
+            overflow: hidden;
+            white-space: nowrap;
+            transition: transform 0.5s ease-in-out; /* Smoother slide animation */
+        }
+
+        .car {
+            margin-right: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+            transition: 0.3s ease-in-out;
+        }
+
+        .car img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px; /* Add rounded corners to images */
+        }
+
+        .car h3 {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #333; /* Change text color */
+            font-size: 18px; /* Increase font size */
+        }
+
+        /* Arrow buttons */
+        .arrow {
+            background-color: #555;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 0 15px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .arrow:hover {
+            background-color: #777;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 20px;
+            position: relative;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #eee;
+        }
+
+        /* Submenu styles */
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            border-radius: 5px;
+            width: 200px;
+        }
+
+        li:hover .submenu {
+            display: block;
+        }
+
+        .submenu a {
+            display: block;
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .submenu a:hover {
+            background-color: #555;
+        }
+
+        /* Additional styling for a cleaner look */
+        header {
+            background: linear-gradient(to right, #333, #555);
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 20px;
+            position: relative;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, #333, #555); /* Add a gradient background */
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Change font */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Car Showroom</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <!-- More dropdown -->
+                <li>
+                    <a href="#" class="more">More</a>
+                    <div class="submenu">
+                        <a href="#">Services</a>
+                        <a href="#">Parts</a>
+                        <a href="#">Customs</a>
+                        <a href="#">Paint color</a>
+                    
+                        <!-- Add more options as needed -->
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header
+</header>
+<main>
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to Our Car Showroom</h2>
+        <p>Explore a wide range of premium cars at our showroom. We offer the latest models from top manufacturers, ensuring quality and style.</p>
+    </section>
+
+    <!-- Options Section -->
+    <section class="options">
+        <h2>Explore By:</h2>
+        <ul>
+            <li><a href="#">Make</a></li>
+            <li><a href="#">Model</a></li>
+            <li><a href="#">Price Range</a></li>
+            <li><a href="#">Features</a></li>
+        </ul>
+    </section>
+
+    <!-- Slider Section -->
+    <section class="slider">
+        <h2>Featured Cars</h2>
+        <div class="car-container" id="carContainer">
+            <div class="car">
+                <img src="/Users/ayushsaini/Desktop/avtaar/images/tesla s.webp" alt="Car 1">
+                <h3>Tesla Model S</h3>
+            </div>
+            <div class="car">
+                <img src="/Users/ayushsaini/Desktop/avtaar/images/ford mustang.jpeg" alt="Car 2">
+                <h3>Ford Mustang</h3>
+            </div>
+            <div class="car">
+                <img src="/Users/ayushsaini/Desktop/avtaar/images/camary.jpeg" alt="Car 3">
+                <h3>Toyota Camry</h3>
+            </div>
+            <div class="car">
+                <img src="/Users/ayushsaini/Desktop/avtaar/images/honda civic.jpeg" alt="Car 4">
+                <h3>Honda Civic</h3>
+            </div>
+            <div class="car">
+                <img src="/Users/ayushsaini/Desktop/avtaar/images/porsche.jpeg" alt="Car 5">
+                <h3>Porsche 911</h3>
+            </div>
+        </div>
+        <button class="arrow prev" onclick="prevSlide()">&#8249;</button>
+        <button class="arrow next" onclick="nextSlide()">&#8250;</button>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are dedicated to providing a premium car-buying experience. Our team is passionate about cars and committed to ensuring customer satisfaction.</p>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Feel free to reach out to us for inquiries, test drives, or any assistance. Our friendly staff is here to help you find the perfect car.</p>
+    </section>
+</main>
+<footer>
+    &copy; 2023 Car Showroom
+</footer>
+<script src="script.js"></script>
+<script>
+    let currentSlide = 0;
+
+    function showSlide() {
+        const carContainer = document.getElementById('carContainer');
+        const slideWidth = document.querySelector('.car').offsetWidth;
+        carContainer.style.transform = `translateX(${-currentSlide * slideWidth}px)`;
+    }
+
+    function nextSlide() {
+        const totalSlides = document.querySelectorAll('.car').length;
+        currentSlide = (currentSlide + 1) % totalSlides;
+        showSlide();
+    }
+
+    function prevSlide() {
+        const totalSlides = document.querySelectorAll('.car').length;
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        showSlide();
+    }
+
+    // Smooth scroll to section
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+</body>
+
+</html>

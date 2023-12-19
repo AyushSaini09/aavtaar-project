@@ -1,0 +1,106 @@
+/* Header */
+header {
+    background: linear-gradient(to right, #FF6B6B, #556270); /* Colorful gradient background */
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+nav a:hover {
+    color: #FFD166; /* Light yellow on hover */
+}
+
+/* Options */
+.options {
+    background-color: #B4CCB9; /* Light green background */
+    padding: 30px;
+}
+
+.options h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #556270; /* Dark blue-green text color */
+}
+
+.options a {
+    color: #3F4D63; /* Dark blue text color */
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.options a:hover {
+    text-decoration: underline;
+    color: #FF6B6B; /* Red on hover */
+}
+
+/* Slider */
+.slider {
+    margin-top: 40px;
+    padding: 30px;
+    background: #FFD166; /* Light yellow background */
+}
+
+.car-container {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: transform 0.5s ease-in-out; /* Smoother slide animation */
+}
+
+.car {
+    margin-right: 20px;
+    background-color: #FF6B6B; /* Red background */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    transition: 0.3s ease-in-out;
+}
+
+.car img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Add rounded corners to images */
+}
+
+.car h3 {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #fff; /* White text color */
+    font-size: 18px; /* Increase font size */
+}
+
+/* Arrow buttons */
+.arrow {
+    background-color: #556270; /* Dark blue-green background */
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 15px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.arrow:hover {
+    background-color: #3F4D63; /* Dark blue on hover */
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #FF6B6B, #556270); /* Colorful gradient background */
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Change font */
+}
